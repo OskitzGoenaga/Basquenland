@@ -35,30 +35,30 @@ body {
 	background: #ffffff;
 }
 
-.site-header > .site-title {
+.site-header>.site-title {
 	font-family: "Sora", sans-serif;
 	font-weight: 700;
 	font-size: 1.2rem;
 	letter-spacing: -0.02em;
 }
 
-.site-header > .nav-links {
+.site-header>.nav-links {
 	display: flex;
 	gap: 38px;
 }
 
-.site-header > .nav-links > a {
+.site-header>.nav-links>a {
 	text-decoration: none;
 	color: #1e1e1e;
 	font-size: 0.95rem;
 	font-weight: 600;
 }
 
-.site-header > .nav-links > a:hover {
+.site-header>.nav-links>a:hover {
 	color: var(--green-dark);
 }
 
-.site-header > .header-buttons {
+.site-header>.header-buttons {
 	display: flex;
 	gap: 12px;
 }
@@ -84,24 +84,23 @@ body {
 	background: #f2f4f8;
 }
 
-.hero {
+.main {
 	min-height: 700px;
 	padding: 76px 84px;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
 	background-image:
-		linear-gradient(135deg, rgba(8, 56, 103, 0.55), rgba(16, 131, 146, 0.28)),
-		url("https://images.unsplash.com/photo-1558370781-d6196949e317?auto=format&fit=crop&w=1800&q=80");
+		linear-gradient(135deg, rgba(8, 56, 103, 0.55), rgba(16, 131, 146, 0.28)), url(../img/sansebastiaan.png);
 	background-position: center;
 	background-size: cover;
 }
 
-.hero > .hero-content {
+.main>.main-content {
 	max-width: 760px;
 }
 
-.hero > .hero-content > h2 {
+.main>.main-content>h2 {
 	font-family: "Sora", sans-serif;
 	color: #ffffff;
 	font-size: clamp(2rem, 5vw, 4rem);
@@ -109,7 +108,7 @@ body {
 	margin-bottom: 46px;
 }
 
-.hero > .hero-card {
+.main>.main-card {
 	width: min(560px, 100%);
 	margin-left: auto;
 	display: flex;
@@ -121,33 +120,33 @@ body {
 	backdrop-filter: blur(3px);
 }
 
-.hero-card > .hero-card-left {
+.main-card>.main-card-left {
 	flex: 1;
 }
 
-.hero-card > .hero-card-left > .avatars {
+.main-card>.main-card-left>.avatars {
 	display: flex;
 	margin-bottom: 12px;
 }
 
-.hero-card > .hero-card-left > .avatars > .avatar {
+.main-card>.main-card-left>.avatars>.avatar {
 	width: 34px;
 	height: 34px;
 	border: 2px solid #ffffff;
 	border-radius: 999px;
 	margin-right: -8px;
-	background: linear-gradient(145deg, #4f6d97, #223a59);
+	background: linear-gradient(145deg, #4f6d97, #223a59) , url(../);
 }
 
-.hero-card > .hero-card-left > h3 {
+.main-card>.main-card-left>h3 {
 	font-family: "Sora", sans-serif;
 	font-size: 2.2rem;
 	line-height: 1;
 	margin-bottom: 6px;
 }
 
-.hero-card > .hero-card-left > p,
-.hero-card > .hero-card-right > p {
+.main-card>.main-card-left>p,
+.main-card>.main-card-right>p {
 	font-weight: 600;
 	color: var(--text-soft);
 }
@@ -162,7 +161,7 @@ body {
 	align-items: center;
 }
 
-.promotions-row > .promo-logo {
+.promotions-row>.promo-logo {
 	height: 66px;
 	border-radius: 10px;
 	display: flex;
@@ -185,7 +184,7 @@ body {
 	align-items: end;
 }
 
-.info-section > .info-left > h4 {
+.info-section>.info-left>h4 {
 	font-size: 0.78rem;
 	letter-spacing: 0.42em;
 	color: #646d9e;
@@ -193,7 +192,7 @@ body {
 	font-weight: 700;
 }
 
-.info-section > .info-left > h2 {
+.info-section>.info-left>h2 {
 	font-family: "Sora", sans-serif;
 	font-size: clamp(2.35rem, 5vw, 4.6rem);
 	line-height: 1.04;
@@ -201,7 +200,7 @@ body {
 	max-width: 760px;
 }
 
-.info-section > .info-right > p {
+.info-section>.info-right>p {
 	color: var(--text-soft);
 	margin-bottom: 24px;
 	max-width: 350px;
@@ -220,7 +219,7 @@ body {
 	padding: 50px 24px;
 }
 
-.quiz-promo > h2 {
+.quiz-promo>h2 {
 	font-family: "Sora", sans-serif;
 	font-size: clamp(2.2rem, 5vw, 4.3rem);
 	line-height: 1.06;
@@ -237,52 +236,52 @@ body {
 	gap: 64px;
 }
 
-.site-footer > .footer-left {
+.site-footer>.footer-left {
 	max-width: 430px;
 }
 
-.site-footer > .footer-left > h3 {
+.site-footer>.footer-left>h3 {
 	font-family: "Sora", sans-serif;
 	font-size: 1.35rem;
 	margin-bottom: 14px;
 }
 
-.site-footer > .footer-left > p {
+.site-footer>.footer-left>p {
 	color: #c8c8cf;
 	font-size: 0.98rem;
 	margin-bottom: 36px;
 }
 
-.site-footer > .footer-left > h4 {
+.site-footer>.footer-left>h4 {
 	font-size: 2rem;
 	font-weight: 800;
 }
 
-.site-footer > .footer-right {
+.site-footer>.footer-right {
 	display: flex;
 	gap: 54px;
 }
 
-.site-footer > .footer-right > .footer-links {
+.site-footer>.footer-right>.footer-links {
 	min-width: 140px;
 	display: flex;
 	flex-direction: column;
 	gap: 11px;
 }
 
-.site-footer > .footer-right > .footer-links > h3 {
+.site-footer>.footer-right>.footer-links>h3 {
 	font-family: "Sora", sans-serif;
 	margin-bottom: 8px;
 }
 
-.site-footer > .footer-right > .footer-links > a {
+.site-footer>.footer-right>.footer-links>a {
 	text-decoration: none;
 	color: #dbdbea;
 	font-weight: 700;
 	text-transform: lowercase;
 }
 
-.site-footer > .footer-right > .footer-links > a:hover {
+.site-footer>.footer-right>.footer-links>a:hover {
 	color: var(--green);
 }
 
@@ -293,12 +292,12 @@ body {
 		padding: 20px;
 	}
 
-	.hero {
+	.main {
 		padding: 42px 20px;
 		min-height: 620px;
 	}
 
-	.hero > .hero-card {
+	.main>.main-card {
 		margin-left: 0;
 	}
 
@@ -314,7 +313,7 @@ body {
 		padding: 70px 20px;
 	}
 
-	.info-section > .info-right > p {
+	.info-section>.info-right>p {
 		max-width: 100%;
 	}
 
@@ -325,26 +324,26 @@ body {
 }
 
 @media (max-width: 620px) {
-	.site-header > .nav-links {
+	.site-header>.nav-links {
 		width: 100%;
 		justify-content: space-between;
 		gap: 12px;
 	}
 
-	.site-header > .header-buttons {
+	.site-header>.header-buttons {
 		width: 100%;
 	}
 
-	.site-header > .header-buttons > .pill-button {
+	.site-header>.header-buttons>.pill-button {
 		flex: 1;
 	}
 
-	.hero > .hero-card {
+	.main>.main-card {
 		flex-direction: column;
 		align-items: flex-start;
 	}
 
-	.hero-card > .hero-card-left > h3 {
+	.main-card>.main-card-left>h3 {
 		font-size: 1.8rem;
 	}
 
@@ -352,7 +351,7 @@ body {
 		grid-template-columns: repeat(2, minmax(60px, 1fr));
 	}
 
-	.site-footer > .footer-right {
+	.site-footer>.footer-right {
 		flex-direction: column;
 		gap: 28px;
 	}

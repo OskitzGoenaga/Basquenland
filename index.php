@@ -30,26 +30,26 @@
     </header>
 
     <main>
-        <div class="hero">
-            <div class="hero-content">
+        <div class="main">
+            <div class="main-content">
                 <h2>The ultimate quiz for traveling to Tilburg or Basqueland</h2>
                 <button class="pill-button" type="button">Start The Quiz</button>
             </div>
 
-            <div class="hero-card">
-                <div class="hero-card-left">
+            <div class="main-card">
+                <div class="main-card-left">
                     <div class="avatars" aria-label="student avatars">
-                        <div class="avatar"></div>
-                        <div class="avatar"></div>
-                        <div class="avatar"></div>
-                        <div class="avatar"></div>
-                        <div class="avatar"></div>
+                        <div id="photo1" class="avatar"></div>
+                        <div id="photo2" class="avatar"></div>
+                        <div id="photo3" class="avatar"></div>
+                        <div id="photo4" class="avatar"></div>
+                        <div id="photo5" class="avatar"></div>
                     </div>
                     <h3>5 Students</h3>
                     <p>1 Project</p>
                 </div>
 
-                <div class="hero-card-right">
+                <div class="main-card-right">
                     <p>our project for the exchange in 2026</p>
                 </div>
             </div>

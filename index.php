@@ -83,7 +83,7 @@
                 <p>Here you can find all the information and fun facts about the Basque Country. Discover its rich
                     history, unique culture, beautiful landscapes, traditions, and interesting facts that make this
                     region special and exciting to explore.</p>
-                <button class="main-knop" type="button">See The Info</button>
+                <a href="basque_info.html"><button class="main-knop" type="button">See The Info</button></a>
             </div>
         </div>
 

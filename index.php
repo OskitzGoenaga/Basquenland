@@ -13,14 +13,14 @@
         <h1 class="site-titel">Euskal Herria x Tillie project</h1>
 
         <div class="navigatie-links">
-            <a href="#baskenland">Basqueland</a>
+            <a href="#baskenland">Euskal Herria</a>
             <a href="#tilburg">Tilburg</a>
             <a href="#over-ons">About Us</a>
         </div>
 
         <div class="kop-knoppen">
-            <button class="main-knop main-knop-licht" type="button">music</button>
-            <button class="main-knop" type="button">Quiz</button>
+            <button class="main-knop main-knop-licht" type="button" onclick="window.location.href='music.html'">Music</button>
+            <button class="main-knop" type="button" onclick="window.location.href='quiz.html'">Quiz</button>
         </div>
     </header>
 
@@ -28,7 +28,7 @@
         <div class="hoofd-blok">
             <div class="hoofd-inhoud">
                 <h2>The ultimate quiz for traveling to Tilburg or Euskal Herria</h2>
-                <button class="main-knop" type="button">Start The Quiz</button>
+                <button class="main-knop" type="button" onclick="window.location.href='quiz.html'">Start The Quiz</button>
             </div>
 
             <div class="hoofd-kaart">
@@ -70,7 +70,7 @@
                 <p>Here you can find all the information and fun facts about Tilburg. Discover its history, unique
                     places, culture, events, and interesting details that make the city special and enjoyable to
                     explore.</p>
-                <button class="main-knop" type="button">See The Info</button>
+                <a href="tilburg_info.html"><button class="main-knop" type="button">See The Info</button></a>
             </div>
         </div>
 
@@ -90,7 +90,7 @@
 
         <div class="quiz-promotie">
             <h2>think you know enough<br>Take the quiz</h2>
-            <button class="main-knop" type="button">The Quiz</button>
+            <button class="main-knop" type="button" onclick="window.location.href='quiz.html'">The Quiz</button>
         </div>
     </main>
 
@@ -107,7 +107,7 @@
                 <h3>pages</h3>
                 <a href="#tilburg">tilburg</a>
                 <a href="#baskenland">basqueland</a>
-                <a href="#">quiz</a>
+                <a href="quiz.html">quiz</a>
                 <a href="#over-ons">about us</a>
             </div>
         </div>

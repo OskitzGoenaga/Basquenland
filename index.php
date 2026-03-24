@@ -10,17 +10,18 @@
 
 <body>
     <header class="site-kop">
-        <h1 class="site-titel">Euskal Herria x Tillie project</h1>
+        <a class="site-titel" href="index.php">Euskal Herria x Tillie project</a>
 
         <div class="navigatie-links">
-            <a href="#baskenland">Euskal Herria</a>
-            <a href="#tilburg">Tilburg</a>
-            <a href="#over-ons">About Us</a>
+            <a href="basque_info.html">Basqueland</a>
+            <a href="tilburg_info.html">Tilburg</a>
+            <a href="about_us.html">About Us</a>
         </div>
 
         <div class="kop-knoppen">
             <button class="main-knop main-knop-licht" type="button" onclick="window.location.href='music.html'">Music</button>
-            <button class="main-knop" type="button" onclick="window.location.href='quiz.html'">Quiz</button>
+            <button class="main-knop main-knop-licht" type="button" onclick="window.location.href='quiz.php'">Quiz</button>
+            <button class="main-knop" type="button" onclick="window.location.href='leaderboard.php'">Leaderboard</button>
         </div>
     </header>
 
@@ -28,7 +29,7 @@
         <div class="hoofd-blok">
             <div class="hoofd-inhoud">
                 <h2>The ultimate quiz for traveling to Tilburg or Euskal Herria</h2>
-                <button class="main-knop" type="button" onclick="window.location.href='quiz.html'">Start The Quiz</button>
+                <button class="main-knop" type="button" onclick="window.location.href='quiz.php'">Start The Quiz</button>
             </div>
 
             <div class="hoofd-kaart">
@@ -90,7 +91,10 @@
 
         <div class="quiz-promotie">
             <h2>think you know enough<br>Take the quiz</h2>
-            <button class="main-knop" type="button" onclick="window.location.href='quiz.html'">The Quiz</button>
+            <div style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap;">
+                <button class="main-knop" type="button" onclick="window.location.href='quiz.php'">The Quiz</button>
+                <button class="main-knop main-knop-licht" type="button" onclick="window.location.href='leaderboard.php'">Leaderboard</button>
+            </div>
         </div>
     </main>
 
@@ -105,10 +109,11 @@
         <div class="voet-rechts">
             <div class="voet-kolom">
                 <h3>pages</h3>
-                <a href="#tilburg">tilburg</a>
-                <a href="#baskenland">basqueland</a>
-                <a href="quiz.html">quiz</a>
-                <a href="#over-ons">about us</a>
+                <a href="tilburg_info.html">tilburg</a>
+                <a href="basque_info.html">basqueland</a>
+                <a href="quiz.php">quiz</a>
+                <a href="leaderboard.php">leaderboard</a>
+                <a href="about_us.html">about us</a>
             </div>
         </div>
     </footer>

@@ -11,24 +11,35 @@ function ensureLeaderboardStorage()
 {
     $dir = dirname(LEADERBOARD_FILE);
     if (!is_dir($dir)) {
-        mkdir($dir, 0777, true);
+        @mkdir($dir, 0777, true);
+    }
+
+    if (!is_dir($dir) || !is_writable($dir)) {
+        return false;
     }
 
     if (!is_file(LEADERBOARD_FILE)) {
-        $fp = fopen(LEADERBOARD_FILE, 'wb');
+        $fp = @fopen(LEADERBOARD_FILE, 'wb');
         if ($fp !== false) {
             fputcsv($fp, ['name', 'score', 'total', 'date']);
             fclose($fp);
+            @chmod(LEADERBOARD_FILE, 0664);
+        } else {
+            return false;
         }
     }
+
+    return is_readable(LEADERBOARD_FILE);
 }
 
 function getRankingFromCsv()
 {
-    ensureLeaderboardStorage();
+    if (!ensureLeaderboardStorage()) {
+        return [];
+    }
 
     $ranking = [];
-    $fp = fopen(LEADERBOARD_FILE, 'rb');
+    $fp = @fopen(LEADERBOARD_FILE, 'rb');
     if ($fp === false) {
         return $ranking;
     }

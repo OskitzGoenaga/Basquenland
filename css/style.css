@@ -167,6 +167,10 @@ body {
 	background-image: url("../img/caecb7f18d048e2c777210b9d4674932eddc2367.png");
 }
 
+#foto6 {
+	background-image: url("../img/p2.png");
+}
+
 .hoofd-kaart>.hoofd-kaart-links>h3 {
 	font-family: "PoppinsLocal", sans-serif;
 	font-size: 2.2rem;

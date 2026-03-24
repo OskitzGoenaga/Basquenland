@@ -10,7 +10,7 @@
 
 <body>
     <header class="site-kop">
-        <h1 class="site-titel">Basqueland x Tillie project</h1>
+        <h1 class="site-titel">Euskal Herria x Tillie project</h1>
 
         <div class="navigatie-links">
             <a href="#baskenland">Basqueland</a>
@@ -27,7 +27,7 @@
     <main>
         <div class="hoofd-blok">
             <div class="hoofd-inhoud">
-                <h2>The ultimate quiz for traveling to Tilburg or Basqueland</h2>
+                <h2>The ultimate quiz for traveling to Tilburg or Euskal Herria</h2>
                 <button class="main-knop" type="button">Start The Quiz</button>
             </div>
 
@@ -39,8 +39,9 @@
                         <div id="foto3" class="profiel"></div>
                         <div id="foto4" class="profiel"></div>
                         <div id="foto5" class="profiel"></div>
+                        <div id="foto6" class="profiel"></div>
                     </div>
-                    <h3>5 Students</h3>
+                    <h3>6 Students</h3>
                     <p>1 Project</p>
                 </div>
 

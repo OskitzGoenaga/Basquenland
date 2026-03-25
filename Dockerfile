@@ -6,9 +6,9 @@ WORKDIR /var/www/html
 # Copy website files into the container.
 COPY . /var/www/html
 
-# Ensure the app can create/update leaderboard CSV data.
-RUN mkdir -p /var/www/html/data \
-    && chown -R www-data:www-data /var/www/html/data \
-    && chmod -R 775 /var/www/html/data
+# Ensure writable persistent data directory exists.
+RUN mkdir -p /var/lib/basquenland \
+    && chown -R www-data:www-data /var/lib/basquenland \
+    && chmod -R 775 /var/lib/basquenland
 
 EXPOSE 80

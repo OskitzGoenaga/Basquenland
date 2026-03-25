@@ -24,7 +24,12 @@ $quizData = [
 
 $totalQuestions = count($quizData);
 
-define('LEADERBOARD_FILE', __DIR__ . DIRECTORY_SEPARATOR . 'data' . DIRECTORY_SEPARATOR . 'leaderboard.csv');
+$leaderboardFileFromEnv = getenv('LEADERBOARD_FILE');
+if (!is_string($leaderboardFileFromEnv) || trim($leaderboardFileFromEnv) === '') {
+    $leaderboardFileFromEnv = __DIR__ . DIRECTORY_SEPARATOR . 'data' . DIRECTORY_SEPARATOR . 'leaderboard.csv';
+}
+
+define('LEADERBOARD_FILE', $leaderboardFileFromEnv);
 
 function h($value)
 {
